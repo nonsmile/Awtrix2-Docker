@@ -7,5 +7,5 @@ RUN echo "java -jar /data/awtrix.jar" >> /containerdata/docker-entrypoint.sh
 RUN ["chmod", "+x", "/containerdata/docker-entrypoint.sh"]
 VOLUME /containerdata
 WORKDIR /data
-EXPOSE 7000 7001
+EXPOSE 7000 7001 5568
 ENTRYPOINT ["/containerdata/docker-entrypoint.sh"]
