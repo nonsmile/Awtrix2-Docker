@@ -1,4 +1,4 @@
-FROM armv7/armhf-java8
+FROM arm64v8/openjdk
 RUN mkdir -p /containerdata
 RUN touch /containerdata/docker-entrypoint.sh
 RUN echo "#!/bin/bash" > /containerdata/docker-entrypoint.sh
